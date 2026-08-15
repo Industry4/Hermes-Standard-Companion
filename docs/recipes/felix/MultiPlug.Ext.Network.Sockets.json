@@ -1,0 +1,162 @@
+{
+  "assembly": "MultiPlug.Ext.Network.Sockets",
+  "version": "1.0.16.0",
+  "properties": {
+    "SocketEndpoints": [
+      {
+        "Guid": "f0ee4750-c7ba-4f2c-ae9e-1d933da30f7b",
+        "ReadEvent": {
+          "Guid": "f0ee4750-c7ba-4f2c-ae9e-1d933da30f7b",
+          "Id": "Socket-Lane1DownstreamXMLRead",
+          "Description": "Socket Downstream Read for Lane 1",
+          "Group": "Endpoint",
+          "Subjects": [
+            "xml"
+          ],
+          "Keys": [
+            "xml"
+          ]
+        },
+        "WriteSubscriptions": [
+          {
+            "WritePrefix": "",
+            "WriteSeparator": "",
+            "WriteAppend": "",
+            "IsHex": false,
+            "IgnoreData": false,
+            "Guid": "e0251f9c-8814-4733-aef5-26e66f8e18dc",
+            "Id": "lan1-DownstreamXMLSend[0]"
+          }
+        ],
+        "Backlog": 100,
+        "Port": 50100,
+        "IPAddress": "192.168.1.185",
+        "NICIndex": 0,
+        "LoggingLevel": 0,
+        "SubscriptionsControlConnect": true,
+        "AllowedList": [],
+        "ReadTrim": false,
+        "ReadPrefix": null,
+        "ReadAppend": null,
+        "LoggingShowControlCharacters": false,
+        "PingPongs": [],
+        "PreventDuplicateClients": false
+      },
+      {
+        "Guid": "70363571-5b6e-4a91-b6c8-994db53437e5",
+        "ReadEvent": {
+          "Guid": "70363571-5b6e-4a91-b6c8-994db53437e5",
+          "Id": "RemoteConfigXMLRead",
+          "Description": "Socket HERMES-9852 Remote Configuration",
+          "Group": "Endpoint",
+          "Subjects": [
+            "xml"
+          ],
+          "Keys": [
+            "xml"
+          ]
+        },
+        "WriteSubscriptions": [
+          {
+            "WritePrefix": "",
+            "WriteSeparator": "",
+            "WriteAppend": "",
+            "IsHex": false,
+            "IgnoreData": false,
+            "Guid": "446f8a56-82e4-4112-9ff5-d4158d983334",
+            "Id": "RemoteConfigXMLSend[0]"
+          }
+        ],
+        "Backlog": 100,
+        "Port": 1248,
+        "IPAddress": "192.168.1.185",
+        "NICIndex": 0,
+        "LoggingLevel": 0,
+        "SubscriptionsControlConnect": true,
+        "AllowedList": [],
+        "ReadTrim": false,
+        "ReadPrefix": null,
+        "ReadAppend": null,
+        "LoggingShowControlCharacters": false,
+        "PingPongs": [],
+        "PreventDuplicateClients": false
+      },
+      {
+        "Guid": "68356291-6ffe-41ad-9864-613e92274ce6",
+        "ReadEvent": {
+          "Guid": "68356291-6ffe-41ad-9864-613e92274ce6",
+          "Id": "SupervisoryXMLRead",
+          "Description": "Socket HERMES-9852 Supervisory System",
+          "Group": "Endpoint",
+          "Subjects": [
+            "xml"
+          ],
+          "Keys": [
+            "xml"
+          ]
+        },
+        "WriteSubscriptions": [
+          {
+            "WritePrefix": "",
+            "WriteSeparator": "",
+            "WriteAppend": "",
+            "IsHex": false,
+            "IgnoreData": false,
+            "Guid": "1b9c0f59-d678-45a9-a293-93e7f1b2ac8d",
+            "Id": "SupervisoryXMLSend[0]"
+          }
+        ],
+        "Backlog": 100,
+        "Port": 50200,
+        "IPAddress": "192.168.1.185",
+        "NICIndex": 0,
+        "LoggingLevel": 0,
+        "SubscriptionsControlConnect": true,
+        "AllowedList": [],
+        "ReadTrim": false,
+        "ReadPrefix": null,
+        "ReadAppend": null,
+        "LoggingShowControlCharacters": false,
+        "PingPongs": [],
+        "PreventDuplicateClients": false
+      }
+    ],
+    "SocketClients": [
+      {
+        "Guid": "05a589c7-fca7-4f09-843e-22e1a4b3464b",
+        "ReadEvent": {
+          "Guid": "05a589c7-fca7-4f09-843e-22e1a4b3464b",
+          "Id": "Socket-Lane1UpstreamXMLRead",
+          "Description": "Socket Upstream Read for Lane 1",
+          "Group": "Client",
+          "Subjects": [
+            "xml"
+          ],
+          "Keys": [
+            "xml"
+          ]
+        },
+        "WriteSubscriptions": [
+          {
+            "WritePrefix": "",
+            "WriteSeparator": "",
+            "WriteAppend": "",
+            "IsHex": false,
+            "IgnoreData": false,
+            "Guid": "50dc42d1-97ca-48a7-a57d-ce53119f8b9c",
+            "Id": "lan1-UpstreamXMLSend[0]"
+          }
+        ],
+        "HostName": "0.0.0.0",
+        "Port": 50100,
+        "LoggingLevel": 0,
+        "SubscriptionsControlConnect": true,
+        "ReadTrim": false,
+        "ReadPrefix": null,
+        "ReadAppend": null,
+        "LoggingShowControlCharacters": false,
+        "PingPongs": []
+      }
+    ]
+  }
+}
